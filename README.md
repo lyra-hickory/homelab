@@ -4,6 +4,9 @@ The aim of this repo is to manage configs, how-to's, and any other documentation
 
 ## Overview
 
+Overview of the current cluster, with relevant information
+
+```bash
 pve01:
     Description:
         HP EliteDesk 800 G2 DM 35W
@@ -15,3 +18,4 @@ pve01:
     dbe02:
         Description:
             Xfce DE
+```
