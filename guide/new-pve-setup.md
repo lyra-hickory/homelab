@@ -50,4 +50,10 @@ Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg
 apt update && apt full-upgrade
 ```
 
+Reboot then done!
+
+```bash
+reboot
+```
+
 ## Done!
