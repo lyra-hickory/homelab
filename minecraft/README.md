@@ -15,6 +15,7 @@ java -Xmx8G -Xms4G -jar paper-26.2-91.jar nogui
 ### Breakdown of command:
 
 -Xmx8G: Max 8G RAM
+
 -Xms4G: Min 4G RAM
 
 ## Additional Documentation
