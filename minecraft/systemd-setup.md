@@ -32,6 +32,16 @@ Symlink
 systemctl enable minecraft
 ```
 
+## User setup
+
+```
+useradd -r -m -s /bin/false minecraft
+```
+
+```
+chown -R minecraft:minecraft /opt/minecraft
+```
+
 ## Config
 
 Here is the service config:
