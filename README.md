@@ -16,12 +16,17 @@ pve01:
 
     dbe01:
         Description:
-            General purpose VM, aimed to play around with Linux, and used for documentation.
+            General purpose VM for headless DBE needs
         ip-address:
             192.168.0.71
     dbe02:
         Description:
-            Xfce DE
+            Xfce DE, main coding workspace
+        ip-address:
+            192.168.0.72
+    msw:
+        Description:
+            Microsoft windows... might drop in the future or remove from this cluster
 pve03:
     Description:
         Dedicated machine for my Minecraft server
