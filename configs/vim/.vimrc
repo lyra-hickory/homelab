@@ -66,3 +66,23 @@ set ignorecase   " /foo matches Foo and foo...
 set smartcase    " ...unless you type a capital, then it's exact
 nnoremap <leader>h :nohlsearch<CR>
 
+" ---- Terminal ----
+set hidden
+
+let g:term_buf = -1
+function! ToggleTerm() abort
+  let winid = bufwinid(g:term_buf)
+  if g:term_buf > 0 && winid != -1
+    call win_execute(winid, 'hide')
+  elseif g:term_buf > 0 && bufexists(g:term_buf)
+    botright 12split
+    execute 'buffer' g:term_buf
+  else
+    botright terminal ++rows=12
+    let g:term_buf = bufnr('%')
+  endif
+endfunction
+
+nnoremap <leader>t :call ToggleTerm()<CR>
+tnoremap <C-\>t <C-\><C-n>:call ToggleTerm()<CR>
+
