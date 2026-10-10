@@ -48,6 +48,7 @@ autocmd BufWritePre *.c,*.h silent! LspFormat
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>p :Files<CR>
 let g:rooter_patterns = ['.git', 'compile_flags.txt', 'Makefile']
+let g:NERDTreeWinSize = 40
 
 " ---- Debugger ----
 packadd termdebug
@@ -58,4 +59,10 @@ nnoremap <F10> :Over<CR>
 nnoremap <F11> :Step<CR>
 nnoremap <leader>de :Evaluate<CR>
 
+" ---- Search configs ----
+set incsearch    " highlight matches as you type
+set hlsearch     " keep matches highlighted
+set ignorecase   " /foo matches Foo and foo...
+set smartcase    " ...unless you type a capital, then it's exact
+nnoremap <leader>h :nohlsearch<CR>
 
