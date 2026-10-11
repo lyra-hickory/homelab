@@ -49,6 +49,7 @@ nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>p :Files<CR>
 let g:rooter_patterns = ['.git', 'compile_flags.txt', 'Makefile']
 let g:NERDTreeWinSize = 40
+let g:NERDTreeShowHidden = 1
 
 " ---- Debugger ----
 packadd termdebug
