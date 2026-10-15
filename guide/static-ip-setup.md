@@ -30,6 +30,8 @@ systemctl restart networking
 Remove `dhcp`and add `static` to the `iface` line and add the address, gateway, and dns-nameservers
 
 address: This is the static address for the machine
+
 gateway: This is the address for the router itself
+
 dns-nameservers: This is the ip address for the DNS resolution
 
