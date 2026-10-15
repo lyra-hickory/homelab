@@ -29,7 +29,7 @@ You can scp the `client_key.pub` over to the Host
 
 3. Optional: add an identity for the Host to the Client's config
 
-On `Host:~/.ssh/config` you can add the following config
+On `Client:~/.ssh/config` you can add the following config
 
 ```
 Host name_for_our_host
