@@ -21,7 +21,7 @@ services:
     user: "1000:1000"
     environment:
       - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
-      - DOMAINS=play.puppy-den.xyz
+      - DOMAINS=mydomain.xyz
       - PROXIED=false
       - UPDATE_CRON=@every 5m
       - IP6_PROVIDER=none
