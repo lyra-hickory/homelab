@@ -16,7 +16,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ### Step 3:
 
-Run vim and do `:PluginInstall` in order to run the installation
+Run vim and do `:PlugInstall` in order to run the installation
 
 Done! Plugins and formatters and configs should now be loaded.
 
